@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200&display=swap');
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+
+.border {
+  border-radius: 4px;
+  height: 89vh;
+  width: 85vw;
+  background-color: #fdfdfd;
+}
+
+.card {
+  margin-top: 3px;
+  margin-left: 3px;
+  background: url('../img/wallpapper.jpg');
+  background-size: cover;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.card h1 {
+  padding-bottom: 2em;
+  margin-left: 100px;
+  font-family: 'Anuphan', sans-serif;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.fourmouth {
+  border-radius: 12px;
+  max-height: 40vh;
+}
+
+.text {
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-left: 55px;
+  margin-top: 55px;
+  text-align: left;
+  font-family: 'Anuphan', sans-serif;
+  color: #ffaad9;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.muted {
+  opacity: 0.8;
+  text-align: center;
+  margin-left: 65px;
+}
+
+.space {
+  height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body.play-music {
+  animation: fadeIn 2s ease-in-out;
+  /* Adjust the animation duration and timing function as needed */
+}
